@@ -23,6 +23,7 @@ These may be passed straight into a call. Each one may also be bound to a variab
 - A type conversion, such as `string(status)` or `int32(1)`.
 - A zap field constructor: `zap.Error`, `zap.String`, and the other `zap` field helpers.
 - `t.Context()`.
+- The inward index walk of an in-place swap. The comparison stays in the `for` clause: `for i, j := 0, n-1; i < j; i, j = i+1, j-1`.
 
 ### Examples
 
