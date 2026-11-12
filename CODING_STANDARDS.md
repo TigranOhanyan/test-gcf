@@ -8,7 +8,7 @@ Never construct a value in a call argument. Bind it first. See Exceptions.
 
 Uncle Bob: name intermediate results. Do not nest work in the call.
 
-Never put business logic in `if` / `switch` / `for` conditions. Compute, assign, then branch (ok pattern).
+Put business logic in the `if` / `switch` / `for` condition itself. Do not compute, assign, then branch.
 
 Never edit think comments in code.
 
