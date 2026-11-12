@@ -3,5 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println("To be defined!!!")
+	placeholder := "To be defined!!!"
+	message := Reverse(placeholder)
+	fmt.Println(message)
 }

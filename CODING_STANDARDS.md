@@ -23,6 +23,7 @@ These may be passed straight into a call. Each one may also be bound to a variab
 - A type conversion, such as `string(status)` or `int32(1)`.
 - A zap field constructor: `zap.Error`, `zap.String`, and the other `zap` field helpers.
 - `t.Context()`.
+- A call that returns the value being passed, such as `NewEventHeader(...)` inside another call.
 
 ### Examples
 
