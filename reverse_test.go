@@ -34,7 +34,7 @@ func Test_Reverse_should_return_the_code_points_of_a_string_in_reverse_order(t *
 func Test_Reverse_should_reverse_a_multi_code_point_grapheme_by_code_point(t *testing.T) {
 	combiningRunes := []rune{'\u0065', '\u0301'}
 	combining := string(combiningRunes)
-	wantCombiningRunes := []rune{'\u0065', '\u0301'}
+	wantCombiningRunes := []rune{'\u0301', '\u0065'}
 	wantCombining := string(wantCombiningRunes)
 	gotCombining := Reverse(combining)
 	if gotCombining != wantCombining {
